@@ -1,0 +1,115 @@
+<!--home.html-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>College Recommender - Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style2.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url("{{ url_for('static', filename='img/bg.jpeg') }}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: transparent; 
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo -->
+    <div class="logo-container">
+        <img src="/static/img/logo.png" alt="College Compass ">
+    </div>
+
+    <div class="welcome-section">
+        <div class="welcome-content">
+            <h1>We Thrive For You</h1>
+            <p>Get recommendations for colleges based on your preferences.</p>
+            <a href="{{ url_for('index_page') }}" class="try-now-button">Try Now</a>
+        </div>
+    </div>
+
+    <!-- About Card -->
+    <div id="about-card" class="about-card">
+        <div class="about-card-content">
+            <h1>About Us</h1>
+            <p>Your gateway to finding the best colleges that match your preferences. Whether you're looking to pursue your dream education or explore various courses, we're here to assist you on your journey.</p>
+            <h2>Why To Choose College Recommender?</h2>
+            <ul>
+                <li>We provide personalized college recommendations based on your rank, location, and preferred branch of study.</li>
+                <li>Our commitment to excellence ensures that you receive the quality service and information you deserve.</li>
+            </ul>
+            <h2>Explore and Discover</h2>
+            <p>Take your time to navigate through our user-friendly interface, explore various courses, and find the right path for your future.</p>
+        </div>
+    </div>
+
+    <!-- Course Cards -->
+    <div class="course-cards hidden">
+        <h1>Know More About Courses</h1>
+        <div class="course-card">
+            <h2>Artificial Intelligence and Machine Learning (AIML)</h2>
+            <p>Artificial Intelligence and Machine Learning (AIML) is all about creating intelligent systems that can learn and make decisions. It's at the forefront of technology.</p>
+        </div>
+        <div class="course-card">
+            <h2>Artificial Intelligence (AI)</h2>
+            <p>Artificial Intelligence (AI) is the simulation of human intelligence processes by machines, especially computer systems. It involves tasks such as problem-solving, understanding natural language, and learning.</p>
+        </div>
+
+        <div class="course-card">
+            <h2>Computer Science (CSE)</h2>
+            <p>Computer Science and Engineering (CSE) is the study of algorithms, data structures, programming languages, software engineering, and more. It's a field that powers the digital world we live in.</p>
+        </div>
+        <div class="course-card">
+            <h2>Computer Science and Technology (CST)</h2>
+            <p>Computer Science and Technology (CST) is a multidisciplinary field that combines computer science with various technology applications, preparing students for careers in tech.</p>
+        </div>
+        <div class="course-card">
+            <h2>Electrical and Computer Engineering (ECE)</h2>
+            <p>Electrical and Computer Engineering (ECE) is a branch of engineering that deals with the study of electrical systems, electronics, and computer technology. It combines both electrical and computer science principles.</p>
+        </div>
+        <div class="course-card">
+            <h2>Electronics and Communication Technology (ECT)</h2>
+            <p>Electronics and Communication Technology (ECT) focuses on electronic devices, circuits, communication systems, and technologies. It plays a key role in modern communication and information processing.</p>
+        </div>
+
+        <div class="course-card">
+            <h2>Electrical and Electronics Engineering (EEE)</h2>
+            <p>Electrical and Electronics Engineering (EEE) deals with the study of electrical systems, electronics, and electromagnetism. It's essential for modern infrastructure.</p>
+        </div>
+        <div class="course-card">
+            <h2>Mechanical Engineering (Mech)</h2>
+            <p>Mechanical Engineering (Mech) is all about designing, analyzing, and manufacturing mechanical systems. It's a versatile field with diverse applications.</p>
+        </div>
+        <div class="course-card">
+            <h2>Civil Engineering (Civil)</h2>
+            <p>Civil Engineering (Civil) involves the design and construction of infrastructure projects like roads, bridges, and buildings. It's about shaping the physical world.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2023 College Recommender
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+  var aboutCard = document.getElementById("about-card");
+  var courseCards = document.querySelector('.course-cards');
+
+  if (window.scrollY > 500) 
+  {
+
+    aboutCard.style.display = "block";
+  }
+
+  if (window.scrollY > aboutCard.offsetTop + aboutCard.clientHeight + 50) 
+  {
+    courseCards.classList.remove('hidden');
+  }
+});
+    </script>
+</body>
+</html>
