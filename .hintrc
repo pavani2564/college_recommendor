@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "extends": [
         "development"
     ],
@@ -12,4 +13,19 @@
             }
         ]
     }
+=======
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "meta-viewport": "off",
+    "axe/language": "off",
+    "axe/structure": [
+      "default",
+      {
+        "list": "off"
+      }
+    ]
+  }
+>>>>>>> 4215f6abc834729663cf0f0d50ec700df52adace
 }
