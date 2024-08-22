@@ -1,0 +1,135 @@
+/* style2.css for recommendations.html */
+
+
+body,
+h1,
+h2,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trendy Font', sans-serif;
+}
+
+
+
+.logo-container {
+    text-align: center;
+    padding: 0px 0;
+}
+
+.logo-container img {
+    max-width: 200px;
+    height: auto;
+}
+
+.welcome-section {
+    background: #3a1b72a4;
+    color: #fffcfc;
+    padding: 200px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 650px;
+
+    border: 1px solid #fcfcfc;
+}
+
+.welcome-content h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.try-now-button {
+    display: inline-block;
+    background-color: #fafafa;
+    color: #050505;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.try-now-button:hover {
+    background-color: #00435E;
+    color: #fff;
+}
+
+.about-card {
+    background: #fff;
+    color: #130000;
+    padding: 80px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 930px;
+
+}
+
+.about-card-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-card-content h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #125688;
+}
+
+.about-card-content p {
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-card-content ul {
+    list-style: circle;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #0b0a0a;
+}
+
+.course-cards {
+    text-align: center;
+}
+
+.course-card {
+    background: #fff;
+    /* White background */
+    color: #000;
+    /* Black text */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.course-card h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #125688;
+}
+
+.course-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.course-cards h1 {
+    text-align: center;
+    color: #fafafa;
+}

@@ -1,0 +1,97 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Candidate Input</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='img/bg2.jpeg') }}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: transparent;
+            color: #000;
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="recommendation-form" action="/recommend" method="POST">
+        <div class="input-group">
+            <label for="rank">Enter Your Rank:</label>
+            <input type="number" id="rank" name="rank" required>
+        </div>
+
+        <div class="input-group">
+            <label for="gender">Choose Your Gender:</label>
+            <div class="radio-group">
+                <input type="radio" id="gender-male" name="gender" value="male" required>
+                <label for="gender-male">Male</label>
+                <input type="radio" id="gender-female" name="gender" value="female" required>
+                <label for="gender-female">Female</label>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="location">Choose Your District:</label>
+            <select id="location" name="location" required>
+                <option value="ATP">Anantapur</option>
+                <option value="CTR">Chittoor</option>
+                <option value="EG">East Godavari</option>
+                <option value="GTR">Guntur</option>
+                <option value="KDP">Kadapa</option>
+                <option value="KNL">Kurnool</option>
+                <option value="KRI">Krishna</option>
+                <option value="NLR">Nellore</option>
+                <option value="PPKS">Prakasam</option>
+                <option value="SKL">Srikakulam</option>
+                <option value="VSP">Visakhapatnam</option>
+                <option value="VZM">Vizianagaram</option>
+                <option value="WG">West Godavari</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="caste">Choose Your Category:</label>
+            <select id="caste" name="caste" required>
+                <option value="OC">OC</option>
+                <option value="SC">SC</option>
+                <option value="ST">ST</option>
+                <option value="BCA">BCA</option>
+                <option value="BCB">BCB</option>
+                <option value="BCC">BCC</option>
+                <option value="BCD">BCD</option>
+                <option value="BCE">BCE</option>
+                <option value="OC_EWS">OC EWS</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="branch">Choose Your Branch:</label>
+            <select id="branch" name="branch" required>
+                <option value="AID">AID</option>
+                <option value="AIM">AIM</option>
+                <option value="CAI">CAI</option>
+                <option value="CIV">CIV</option>
+                <option value="CS">CS</option>
+                <option value="CSB">CSB</option>
+                <option value="CSE">CSE</option>
+                <option value="CSM">CSM</option>
+                <option value="DS">DS</option>
+                <option value="ECE">ECE</option>
+                <option value="ECT">ECT</option>
+                <option value="EEE">EEE</option>
+                <option value="INF">INF</option>
+                <option value="MEC">MEC</option>
+            </select>
+        </div>
+
+        <button type="submit" id="recommend-button">Get Recommendations</button>
+    </form>
+</body>
+
+</html>
