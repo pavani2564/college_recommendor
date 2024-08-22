@@ -1,0 +1,64 @@
+/* style1.css for recommendations.html */
+
+
+
+body {
+    background-color: #0A1828;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+h1.title {
+    font-size: 2rem;
+    margin: 0;
+    padding: 20px;
+    background-color: #BFA181; 
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+ul.college-list {
+    list-style: none;
+    padding: 0;
+}
+
+li.college-item {
+    padding: 20px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+li.college-item:last-child {
+    border-bottom: none;
+}
+
+li.college-item a {
+    text-decoration: none;
+    color: #BFA181;
+    font-weight: bold;
+}
+
+ul.college-list li a:hover {
+    color: #178582; 
+}
+
+.main {
+    padding: 20px;
+}
+
+
