@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from flask import Flask, render_template, request
 import pandas as pd
 
@@ -86,4 +85,4 @@ def recommend():
 
 if __name__ == '__main__':
     app.run(debug=False)
->>>>>>> 4215f6abc834729663cf0f0d50ec700df52adace
+
